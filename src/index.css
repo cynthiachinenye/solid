@@ -32,5 +32,28 @@
    gap:0.5rem;
  }
  .button{
-   height:100px;
+   height:58px;
+   display:flex;
+   background:#e9f0f4;
+   padding:10px;
+   border-radius:10px;
+   justify-content:center;
+   align-items:center;
+   cursor:pointer;
+   color:#242424;
+   border:none;
+   font-size:24px;
+   
+ }
+ .button:hover{
+   border:2px dotted #242424;
+ }
+
+ .equalto{
+   background: #4bd886;
+   grid-column:3/5;
+ }
+
+ .options{
+   background:#f79585;
  }
