@@ -11,13 +11,27 @@ const getStyleName = cyndy =>{
   return className[cyndy]
 }
 const Button = ({value}) => {
+  const commaClick =() =>{
+    
+  }
   const clickHandler = ()=>{
     const command ={
       '.': commaClick,
       'C':resetClick,
       '/':signClick,
+      'x':signClick,
+      '-':signClick,
+      '=':equalsClick,
+      '%':percentageClick,
+      '+-':invertClick,
+
     }
 
+    if(command[value]){
+      return command[value]()
+    }else{
+      return clickHandlerButton()
+    }
   }
   return (
 <button onClick={clickHandler} className={`${getStyleName(value)} button`}> {value}</button >
