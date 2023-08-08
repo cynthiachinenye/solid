@@ -1,34 +1,46 @@
-
 import './App.css';
-import Button from './Components/Button';
-import ButtonBox from './Components/ButtonBox';
-import Screen from './Components/Screen';
-import Wrapper from './Components/Wrapper';
-
-const btnValues = [
-  ["C", "+-","%", "/"],
-  [7, 8, 9, "x"],
-  [4, 5, 6, "-"],
-  [1, 2, 3, "+"],
-  [0,".", "="],
-];
-
+import React,{useState} from './react'
 function App() {
+
   return (
-    <div className="App">
-    <CalcProvider>
-    <Wrapper>
-      <Screen/>
-      <ButtonBox>
-        {
-          btnValues.flat().map((btn , i) =>(
-            <Button value = {btn} key={i}/>
-          ))
-        }
-        
-      </ButtonBox>
-     </Wrapper>
-    </CalcProvider>
+    <div className="container">
+       <div className="calculator">
+        <form action="">
+          <div className="screen">
+            <input type="text"/>
+          </div>
+          <div className="btns">
+            <input type="button" value="AC"/>
+            <input type="button" value="DE"/>
+            <input type="button" value="."/>
+            <input type="button" value="/"/>
+          </div>
+          <div className="btns">
+            <input type="button" value="7"/>
+            <input type="button" value="8"/>
+            <input type="button" value="9"/>
+            <input type="button" value="x"/>
+          </div>
+          <div className="btns">
+            <input type="button" value="4"/>
+            <input type="button" value="5"/>
+            <input type="button" value="6"/>
+            <input type="button" value="+"/>
+          </div>
+          <div className="btns">
+            <input type="button" value="1"/>
+            <input type="button" value="2"/>
+            <input type="button" value="3"/>
+            <input type="button" value="-"/>
+          </div>
+          <div className="btns">
+            <input type="button" value="00"/>
+            <input type="button" value="0"/>
+            <input type="button" value="="/>
+    
+          </div>
+        </form>
+       </div>
     </div>
   );
 }

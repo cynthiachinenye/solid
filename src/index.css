@@ -1,4 +1,54 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+
+.container{
+  width: 100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(140deg, rgb(36,36,223), rgb(39,39,197));
+}
+.calculator{
+  padding:20px;
+  border-radius:10px;
+  background:#fff;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+form input{
+  border:none;
+  outline:0;
+  width:60px;
+  height:60px;
+  font-size:16px;
+  background: rgb(91, 91, 142);
+  margin:2px;
+  border-radius:10px;
+  color:#ffff;
+  font-weight:bolder;
+  cursor:pointer;
+
+}
+.btns input[type="button"]:hover{
+  background:rgb(137, 22, 246);
+  border:2px dotted #242424;
+}
+ form .screen{
+  display:flex;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
+
+ }
+ .screen input{
+   text-align: right;
+   flex:1;
+   padding: 5px 10px;
+   font-size:40px;
+   background:rgb(56, 54, 54);
+ }
+ 
+ /* 
 
  *{
     margin:0;
@@ -56,4 +106,4 @@
 
  .options{
    background:#f79585;
- }
+ } */
