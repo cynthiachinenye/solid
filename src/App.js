@@ -16,7 +16,8 @@ const btnValues = [
 function App() {
   return (
     <div className="App">
-     <Wrapper>
+    <CalcProvider>
+    <Wrapper>
       <Screen/>
       <ButtonBox>
         {
@@ -27,6 +28,7 @@ function App() {
         
       </ButtonBox>
      </Wrapper>
+    </CalcProvider>
     </div>
   );
 }
